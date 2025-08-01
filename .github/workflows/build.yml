@@ -16,7 +16,8 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          sdk: 'stable'  # می‌تونی ورژن خاصی هم بذاری مثل '3.7.0'
+          channel: stable   # اینجا می‌تونی 'stable' یا 'beta' یا 'dev' بزنی
+          # یا اگر می‌خوای ورژن خاص بدی از flutter-version استفاده کن مثل: flutter-version: '3.7.0'
 
       - name: Install dependencies
         run: flutter pub get
